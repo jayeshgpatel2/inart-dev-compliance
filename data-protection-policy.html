@@ -1,102 +1,169 @@
-📄 Data Protection Policy (DPP)
+# Privacy Policy & Data Protection Policy
+**Organization:** InArt Studio  
+**Effective Date:** January 10, 2026  
+**Last Updated:** January 9, 2026
 
-Last updated: 1 October 2026
+## 1. Introduction
+InArt Studio ("we", "us", or "our") is committed to protecting the privacy and security of data obtained through Amazon Selling Partner API. This policy describes how we collect, use, store, and protect Amazon data, including Personally Identifiable Information (PII).
 
-1. Scope
+## 2. Compliance
+We comply with:
+- Amazon Services API Solution Provider Agreement
+- Amazon Acceptable Use Policy (AUP)
+- Amazon Data Protection Policy (DPP)
+- Applicable data protection laws (GDPR, CCPA, Indian IT Act 2000)
 
-This Data Protection Policy (“DPP”) explains how Glacer Ceramic protects Amazon Information accessed via the Amazon Selling Partner API (SP-API).
+## 3. Data Collection
+We collect data exclusively from Amazon Selling Partner API for:
+- Inventory management and synchronization
+- Order fulfillment and shipping label generation
+- Catalog management and product listing optimization
+- Sales analytics and advertising optimization
 
-This policy applies to all Amazon Information, including restricted data where applicable.
+**Data Types Collected:**
+- Product catalog information (SKUs, titles, attributes, images)
+- Inventory levels and fulfillment data
+- Order information (order IDs, shipping addresses, buyer names)
+- Sales and performance metrics
 
-2. Data Collected
+## 4. Data Usage
+Amazon data is used solely for:
+- Managing inventory across fulfillment channels
+- Generating shipping labels for direct-to-consumer orders
+- Optimizing product listings and advertising campaigns
+- Business analytics and reporting for authorized sellers
+- Compliance with Amazon seller requirements
 
-We may process the following categories of Amazon Information:
+**We DO NOT:**
+- Sell or share Amazon data with third parties
+- Use data for purposes unrelated to Amazon seller operations
+- Access buyer information for marketing or unauthorized purposes
 
-Product catalog data (ASINs, SKUs, attributes)
+## 5. Data Storage & Security
 
-Inventory and fulfillment data
+### 5.1 Encryption
+- **In Transit:** All data transmitted via HTTPS/TLS 1.3
+- **At Rest:** AES-256 encryption for all stored data
+- Key Management: AWS KMS (Key Management Service)
 
-Order-level operational data
+### 5.2 Access Controls
+- Role-based access control (RBAC)
+- Multi-factor authentication (MFA) required for all system access
+- Individual user accounts with audit trails
+- Access granted on need-to-know basis only
 
-Return and logistics metadata
+### 5.3 Infrastructure Security
+- AWS cloud infrastructure with VPC isolation
+- Network security: Firewalls, IDS/IPS, DDoS protection
+- Database access restricted via security groups
+- Regular security patches and updates
 
-We do not intentionally collect or store unnecessary buyer Personally Identifiable Information (PII).
+## 6. Data Retention
+- **PII (Buyer Information):** Retained for 31-90 days after order shipment
+- **Order Data:** Retained for 1 year for compliance and analytics
+- **Catalog Data:** Retained while actively managing product listings
+- **Audit Logs:** Retained for minimum 12 months
 
-3. Data Usage Limitation
+**Data Disposal:** Secure deletion using cryptographic erasure and overwriting methods.
 
-Amazon Information is used only to provide services to the authorized seller and only for purposes approved under the granted SP-API roles.
+## 7. Third-Party Sharing
+We do NOT share Amazon Information with any third parties. All data is processed internally for authorized seller account management only.
 
-We do not use Amazon Information for:
+## 8. Employee Access & Monitoring
+- Access to Amazon data restricted to authorized employees only
+- Background checks for employees with data access
+- Regular security training and awareness programs
+- Monitoring systems prevent data access from personal devices
+- USB/external device access disabled on production systems
+- Mobile Device Management (MDM) for company devices
 
-Advertising to buyers
+## 9. Incident Response
+In the event of a security incident:
+1. Immediate containment and investigation (within 1 hour)
+2. Notification to security@amazon.com within 24 hours
+3. Root cause analysis and remediation
+4. Post-incident review and security improvements
 
-Behavioral profiling
+**Incident Management Point of Contact:**  
+Name: [Your Name]  
+Email: [Your Email]  
+Phone: [Your Phone]
 
-Non-Amazon marketplaces
+## 10. Security Controls
 
-Unrelated analytics or resale
+### 10.1 Network Security
+- Perimeter firewalls and WAF (Web Application Firewall)
+- Intrusion Detection/Prevention Systems (IDS/IPS)
+- Network segmentation (production isolated from development)
+- Anti-virus/anti-malware on all endpoints
 
-4. Security Controls
+### 10.2 Application Security
+- Code scanning before each release (SAST/DAST)
+- Vulnerability scans every 30 days
+- Annual penetration testing by certified firms
+- Critical vulnerabilities remediated within 7 days
+- High vulnerabilities remediated within 30 days
 
-We maintain industry-standard security measures, including:
+### 10.3 Change Management
+- Formal change approval process
+- Dedicated test environment (staging)
+- Code review required before production deployment
+- Automated testing and CI/CD pipelines
 
-Encrypted data transmission (HTTPS / TLS)
+### 10.4 Password Management
+- Minimum 12 characters with special characters
+- Multi-Factor Authentication (MFA) mandatory
+- 90-day password expiration
+- Password history enforcement (10 previous passwords)
+- Credentials stored in AWS Secrets Manager
 
-Secure credential storage (no hard-coded secrets)
+## 11. Testing & Development
+- PII is masked/anonymized in test environments
+- Production data never used in development
+- Synthetic test data generation for testing
+- Separate AWS accounts for dev/staging/production
 
-Role-based access controls
+## 12. Monitoring & Logging
+- Centralized logging (AWS CloudWatch, CloudTrail)
+- Real-time alerting for suspicious activities
+- Bi-weekly log reviews by security team
+- 12-month log retention minimum
+- SIEM (Security Information and Event Management) integration
 
-Firewall and malware protection
+## 13. Backup & Disaster Recovery
+- Automated daily backups with encryption
+- Geographically separated backup storage (multi-region)
+- Recovery Time Objective (RTO): 4 hours
+- Recovery Point Objective (RPO): 1 hour
+- Monthly disaster recovery drills
 
-Regular access reviews
+## 14. Vulnerability Management
+- Automated vulnerability scanning (AWS Inspector, Qualys)
+- Tracking via ticketing system (Jira) with SLA enforcement
+- Monthly security dashboard review
+- Third-party dependency scanning
+- Bug bounty program for responsible disclosure
 
-Monitoring and logging
+## 15. User Rights
+Authorized sellers can:
+- Request access to their data
+- Request data deletion
+- Revoke API access at any time
+- Receive breach notifications
 
-5. Encryption
+## 16. Policy Updates
+This policy is reviewed every 6 months and updated as needed. Users will be notified of material changes.
 
-In transit: All Amazon Information is encrypted using TLS
+## 17. Contact Information
+**Data Protection Officer:**  
+InArt Studio  
+Email: [your-email]  
+Website: https://inart.co.in
 
-At rest: Sensitive data is stored in secure systems with access restrictions
+For security incidents: security@amazon.com  
+For privacy inquiries: [your-privacy-email]
 
-6. Incident Response
+---
 
-We maintain a documented incident response plan that includes:
-
-Defined roles and responsibilities
-
-Regular reviews (at least every 6 months)
-
-Notification to Amazon at security@amazon.com
- within 24 hours of discovering any security incident involving Amazon Information
-
-7. Data Sharing
-
-We do not share Amazon Information with:
-
-Third-party vendors
-
-Contractors
-
-Affiliates
-
-External analytics providers
-
-All data usage remains internal to Glacer Ceramic.
-
-8. Data Deletion & Seller Rights
-
-Upon:
-
-Seller request
-
-Termination of authorization
-
-Amazon instruction
-
-All Amazon Information is deleted or rendered inaccessible without undue delay.
-
-9. Contact
-
-For data protection or security inquiries:
-
-Email: glacerceramic@gmail.com
+**Last Review Date:** January 9, 2026  
+**Next Review Date:** July 9, 2026
