@@ -1,169 +1,609 @@
-# Privacy Policy & Data Protection Policy
-**Organization:** InArt Studio  
-**Effective Date:** January 10, 2026  
-**Last Updated:** January 9, 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Protection Policy - InArt Studio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-## 1. Introduction
-InArt Studio ("we", "us", or "our") is committed to protecting the privacy and security of data obtained through Amazon Selling Partner API. This policy describes how we collect, use, store, and protect Amazon data, including Personally Identifiable Information (PII).
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
 
-## 2. Compliance
-We comply with:
-- Amazon Services API Solution Provider Agreement
-- Amazon Acceptable Use Policy (AUP)
-- Amazon Data Protection Policy (DPP)
-- Applicable data protection laws (GDPR, CCPA, Indian IT Act 2000)
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
 
-## 3. Data Collection
-We collect data exclusively from Amazon Selling Partner API for:
-- Inventory management and synchronization
-- Order fulfillment and shipping label generation
-- Catalog management and product listing optimization
-- Sales analytics and advertising optimization
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px 30px;
+    }
 
-**Data Types Collected:**
-- Product catalog information (SKUs, titles, attributes, images)
-- Inventory levels and fulfillment data
-- Order information (order IDs, shipping addresses, buyer names)
-- Sales and performance metrics
+    .header h1 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
 
-## 4. Data Usage
-Amazon data is used solely for:
-- Managing inventory across fulfillment channels
-- Generating shipping labels for direct-to-consumer orders
-- Optimizing product listings and advertising campaigns
-- Business analytics and reporting for authorized sellers
-- Compliance with Amazon seller requirements
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      opacity: 0.95;
+    }
 
-**We DO NOT:**
-- Sell or share Amazon data with third parties
-- Use data for purposes unrelated to Amazon seller operations
-- Access buyer information for marketing or unauthorized purposes
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+    }
 
-## 5. Data Storage & Security
+    .meta-label {
+      font-size: 0.85em;
+      opacity: 0.8;
+      margin-bottom: 3px;
+    }
 
-### 5.1 Encryption
-- **In Transit:** All data transmitted via HTTPS/TLS 1.3
-- **At Rest:** AES-256 encryption for all stored data
-- Key Management: AWS KMS (Key Management Service)
+    .meta-value {
+      font-weight: 600;
+      font-size: 1.05em;
+    }
 
-### 5.2 Access Controls
-- Role-based access control (RBAC)
-- Multi-factor authentication (MFA) required for all system access
-- Individual user accounts with audit trails
-- Access granted on need-to-know basis only
+    .content {
+      padding: 40px 30px;
+    }
 
-### 5.3 Infrastructure Security
-- AWS cloud infrastructure with VPC isolation
-- Network security: Firewalls, IDS/IPS, DDoS protection
-- Database access restricted via security groups
-- Regular security patches and updates
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
 
-## 6. Data Retention
-- **PII (Buyer Information):** Retained for 31-90 days after order shipment
-- **Order Data:** Retained for 1 year for compliance and analytics
-- **Catalog Data:** Retained while actively managing product listings
-- **Audit Logs:** Retained for minimum 12 months
+    .back-link:hover {
+      color: #764ba2;
+    }
 
-**Data Disposal:** Secure deletion using cryptographic erasure and overwriting methods.
+    .back-link::before {
+      content: "← ";
+    }
 
-## 7. Third-Party Sharing
-We do NOT share Amazon Information with any third parties. All data is processed internally for authorized seller account management only.
+    .toc {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      border-left: 4px solid #667eea;
+    }
 
-## 8. Employee Access & Monitoring
-- Access to Amazon data restricted to authorized employees only
-- Background checks for employees with data access
-- Regular security training and awareness programs
-- Monitoring systems prevent data access from personal devices
-- USB/external device access disabled on production systems
-- Mobile Device Management (MDM) for company devices
+    .toc h3 {
+      margin-bottom: 15px;
+      color: #333;
+    }
 
-## 9. Incident Response
-In the event of a security incident:
-1. Immediate containment and investigation (within 1 hour)
-2. Notification to security@amazon.com within 24 hours
-3. Root cause analysis and remediation
-4. Post-incident review and security improvements
+    .toc ol {
+      margin-left: 20px;
+    }
 
-**Incident Management Point of Contact:**  
-Name: [Your Name]  
-Email: [Your Email]  
-Phone: [Your Phone]
+    .toc li {
+      margin-bottom: 5px;
+    }
 
-## 10. Security Controls
+    .toc a {
+      color: #667eea;
+      text-decoration: none;
+    }
 
-### 10.1 Network Security
-- Perimeter firewalls and WAF (Web Application Firewall)
-- Intrusion Detection/Prevention Systems (IDS/IPS)
-- Network segmentation (production isolated from development)
-- Anti-virus/anti-malware on all endpoints
+    .toc a:hover {
+      text-decoration: underline;
+    }
 
-### 10.2 Application Security
-- Code scanning before each release (SAST/DAST)
-- Vulnerability scans every 30 days
-- Annual penetration testing by certified firms
-- Critical vulnerabilities remediated within 7 days
-- High vulnerabilities remediated within 30 days
+    .section {
+      margin: 40px 0;
+      scroll-margin-top: 20px;
+    }
 
-### 10.3 Change Management
-- Formal change approval process
-- Dedicated test environment (staging)
-- Code review required before production deployment
-- Automated testing and CI/CD pipelines
+    h2 {
+      color: #667eea;
+      font-size: 1.6em;
+      margin-bottom: 15px;
+      padding-top: 20px;
+      border-top: 2px solid #e0e0e0;
+    }
 
-### 10.4 Password Management
-- Minimum 12 characters with special characters
-- Multi-Factor Authentication (MFA) mandatory
-- 90-day password expiration
-- Password history enforcement (10 previous passwords)
-- Credentials stored in AWS Secrets Manager
+    .section:first-of-type h2 {
+      border-top: none;
+      padding-top: 0;
+    }
 
-## 11. Testing & Development
-- PII is masked/anonymized in test environments
-- Production data never used in development
-- Synthetic test data generation for testing
-- Separate AWS accounts for dev/staging/production
+    h3 {
+      color: #555;
+      font-size: 1.2em;
+      margin: 20px 0 10px 0;
+    }
 
-## 12. Monitoring & Logging
-- Centralized logging (AWS CloudWatch, CloudTrail)
-- Real-time alerting for suspicious activities
-- Bi-weekly log reviews by security team
-- 12-month log retention minimum
-- SIEM (Security Information and Event Management) integration
+    h4 {
+      color: #666;
+      font-size: 1.05em;
+      margin: 15px 0 8px 0;
+      font-weight: 600;
+    }
 
-## 13. Backup & Disaster Recovery
-- Automated daily backups with encryption
-- Geographically separated backup storage (multi-region)
-- Recovery Time Objective (RTO): 4 hours
-- Recovery Point Objective (RPO): 1 hour
-- Monthly disaster recovery drills
+    p {
+      margin-bottom: 15px;
+      color: #555;
+    }
 
-## 14. Vulnerability Management
-- Automated vulnerability scanning (AWS Inspector, Qualys)
-- Tracking via ticketing system (Jira) with SLA enforcement
-- Monthly security dashboard review
-- Third-party dependency scanning
-- Bug bounty program for responsible disclosure
+    ul, ol {
+      margin: 15px 0 15px 25px;
+    }
 
-## 15. User Rights
-Authorized sellers can:
-- Request access to their data
-- Request data deletion
-- Revoke API access at any time
-- Receive breach notifications
+    li {
+      margin-bottom: 8px;
+      color: #555;
+    }
 
-## 16. Policy Updates
-This policy is reviewed every 6 months and updated as needed. Users will be notified of material changes.
+    .info-box {
+      background: #e3f2fd;
+      border-left: 4px solid #2196f3;
+      padding: 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
 
-## 17. Contact Information
-**Data Protection Officer:**  
-InArt Studio  
-Email: [your-email]  
-Website: https://inart.co.in
+    .info-box h4 {
+      color: #1565c0;
+      margin-top: 0;
+    }
 
-For security incidents: security@amazon.com  
-For privacy inquiries: [your-privacy-email]
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
 
----
+    .warning-box h4 {
+      color: #856404;
+      margin-top: 0;
+    }
 
-**Last Review Date:** January 9, 2026  
-**Next Review Date:** July 9, 2026
+    .success-box {
+      background: #f0fdf4;
+      border-left: 4px solid #10b981;
+      padding: 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+
+    .contact-box {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 6px;
+      margin-top: 30px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .contact-box h3 {
+      color: #333;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      margin-bottom: 8px;
+    }
+
+    .contact-box strong {
+      color: #333;
+    }
+
+    .contact-box a {
+      color: #667eea;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    th {
+      background: #f8f9fa;
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+      color: #333;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #e0e0e0;
+      color: #555;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 30px 0;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        padding: 30px 20px;
+      }
+
+      .header h1 {
+        font-size: 1.6em;
+      }
+
+      .content {
+        padding: 30px 20px;
+      }
+
+      .meta {
+        grid-template-columns: 1fr;
+      }
+
+      table {
+        font-size: 0.9em;
+      }
+
+      th, td {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Privacy Policy & Data Protection Policy</h1>
+      <div class="meta">
+        <div class="meta-item">
+          <span class="meta-label">Organization</span>
+          <span class="meta-value">InArt Studio</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Effective Date</span>
+          <span class="meta-value">January 10, 2026</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Last Updated</span>
+          <span class="meta-value">January 9, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <a href="/" class="back-link">Back to Home</a>
+
+      <div class="toc">
+        <h3>Table of Contents</h3>
+        <ol>
+          <li><a href="#section1">Introduction</a></li>
+          <li><a href="#section2">Compliance</a></li>
+          <li><a href="#section3">Data Collection</a></li>
+          <li><a href="#section4">Data Usage</a></li>
+          <li><a href="#section5">Data Storage & Security</a></li>
+          <li><a href="#section6">Data Retention</a></li>
+          <li><a href="#section7">Third-Party Sharing</a></li>
+          <li><a href="#section8">Employee Access & Monitoring</a></li>
+          <li><a href="#section9">Incident Response</a></li>
+          <li><a href="#section10">Security Controls</a></li>
+          <li><a href="#section11">Testing & Development</a></li>
+          <li><a href="#section12">Monitoring & Logging</a></li>
+          <li><a href="#section13">Backup & Disaster Recovery</a></li>
+          <li><a href="#section14">Vulnerability Management</a></li>
+          <li><a href="#section15">User Rights</a></li>
+          <li><a href="#section16">Policy Updates</a></li>
+          <li><a href="#section17">Contact Information</a></li>
+        </ol>
+      </div>
+
+      <div class="section" id="section1">
+        <h2>1. Introduction</h2>
+        <p>InArt Studio ("we", "us", or "our") is committed to protecting the privacy and security of data obtained through Amazon Selling Partner API. This policy describes how we collect, use, store, and protect Amazon data, including Personally Identifiable Information (PII).</p>
+      </div>
+
+      <div class="section" id="section2">
+        <h2>2. Compliance</h2>
+        <p>We comply with:</p>
+        <ul>
+          <li>Amazon Services API Solution Provider Agreement</li>
+          <li>Amazon Acceptable Use Policy (AUP)</li>
+          <li>Amazon Data Protection Policy (DPP)</li>
+          <li>Applicable data protection laws (GDPR, CCPA, Indian IT Act 2000)</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section3">
+        <h2>3. Data Collection</h2>
+        <p>We collect data exclusively from Amazon Selling Partner API for:</p>
+        <ul>
+          <li>Inventory management and synchronization</li>
+          <li>Order fulfillment and shipping label generation</li>
+          <li>Catalog management and product listing optimization</li>
+          <li>Sales analytics and advertising optimization</li>
+        </ul>
+
+        <div class="info-box">
+          <h4>Data Types Collected:</h4>
+          <ul>
+            <li>Product catalog information (SKUs, titles, attributes, images)</li>
+            <li>Inventory levels and fulfillment data</li>
+            <li>Order information (order IDs, shipping addresses, buyer names)</li>
+            <li>Sales and performance metrics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section" id="section4">
+        <h2>4. Data Usage</h2>
+        <p>Amazon data is used solely for:</p>
+        <ul>
+          <li>Managing inventory across fulfillment channels</li>
+          <li>Generating shipping labels for direct-to-consumer orders</li>
+          <li>Optimizing product listings and advertising campaigns</li>
+          <li>Business analytics and reporting for authorized sellers</li>
+          <li>Compliance with Amazon seller requirements</li>
+        </ul>
+
+        <div class="warning-box">
+          <h4>We DO NOT:</h4>
+          <ul>
+            <li>Sell or share Amazon data with third parties</li>
+            <li>Use data for purposes unrelated to Amazon seller operations</li>
+            <li>Access buyer information for marketing or unauthorized purposes</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section" id="section5">
+        <h2>5. Data Storage & Security</h2>
+
+        <h3>5.1 Encryption</h3>
+        <ul>
+          <li><strong>In Transit:</strong> All data transmitted via HTTPS/TLS 1.3</li>
+          <li><strong>At Rest:</strong> AES-256 encryption for all stored data</li>
+          <li><strong>Key Management:</strong> AWS KMS (Key Management Service)</li>
+        </ul>
+
+        <h3>5.2 Access Controls</h3>
+        <ul>
+          <li>Role-based access control (RBAC)</li>
+          <li>Multi-factor authentication (MFA) required for all system access</li>
+          <li>Individual user accounts with audit trails</li>
+          <li>Access granted on need-to-know basis only</li>
+        </ul>
+
+        <h3>5.3 Infrastructure Security</h3>
+        <ul>
+          <li>AWS cloud infrastructure with VPC isolation</li>
+          <li>Network security: Firewalls, IDS/IPS, DDoS protection</li>
+          <li>Database access restricted via security groups</li>
+          <li>Regular security patches and updates</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section6">
+        <h2>6. Data Retention</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Retention Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PII (Buyer Information)</td>
+              <td>31-90 days after order shipment</td>
+            </tr>
+            <tr>
+              <td>Order Data</td>
+              <td>1 year for compliance and analytics</td>
+            </tr>
+            <tr>
+              <td>Catalog Data</td>
+              <td>While actively managing product listings</td>
+            </tr>
+            <tr>
+              <td>Audit Logs</td>
+              <td>Minimum 12 months</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>Data Disposal:</strong> Secure deletion using cryptographic erasure and overwriting methods.</p>
+      </div>
+
+      <div class="section" id="section7">
+        <h2>7. Third-Party Sharing</h2>
+        <div class="success-box">
+          <p><strong>We do NOT share Amazon Information with any third parties.</strong> All data is processed internally for authorized seller account management only.</p>
+        </div>
+      </div>
+
+      <div class="section" id="section8">
+        <h2>8. Employee Access & Monitoring</h2>
+        <ul>
+          <li>Access to Amazon data restricted to authorized employees only</li>
+          <li>Background checks for employees with data access</li>
+          <li>Regular security training and awareness programs</li>
+          <li>Monitoring systems prevent data access from personal devices</li>
+          <li>USB/external device access disabled on production systems</li>
+          <li>Mobile Device Management (MDM) for company devices</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section9">
+        <h2>9. Incident Response</h2>
+        <p>In the event of a security incident:</p>
+        <ol>
+          <li>Immediate containment and investigation (within 1 hour)</li>
+          <li>Notification to security@amazon.com within 24 hours</li>
+          <li>Root cause analysis and remediation</li>
+          <li>Post-incident review and security improvements</li>
+        </ol>
+
+        <div class="info-box">
+          <h4>Incident Management Point of Contact:</h4>
+          <p><strong>Name:</strong> Jay Patel<br>
+          <strong>Email:</strong> glacerceramic@gmail.com<br>
+          <strong>Phone:</strong> +917715972129</p>
+        </div>
+      </div>
+
+      <div class="section" id="section10">
+        <h2>10. Security Controls</h2>
+
+        <h3>10.1 Network Security</h3>
+        <ul>
+          <li>Perimeter firewalls and WAF (Web Application Firewall)</li>
+          <li>Intrusion Detection/Prevention Systems (IDS/IPS)</li>
+          <li>Network segmentation (production isolated from development)</li>
+          <li>Anti-virus/anti-malware on all endpoints</li>
+        </ul>
+
+        <h3>10.2 Application Security</h3>
+        <ul>
+          <li>Code scanning before each release (SAST/DAST)</li>
+          <li>Vulnerability scans every 30 days</li>
+          <li>Annual penetration testing by certified firms</li>
+          <li>Critical vulnerabilities remediated within 7 days</li>
+          <li>High vulnerabilities remediated within 30 days</li>
+        </ul>
+
+        <h3>10.3 Change Management</h3>
+        <ul>
+          <li>Formal change approval process</li>
+          <li>Dedicated test environment (staging)</li>
+          <li>Code review required before production deployment</li>
+          <li>Automated testing and CI/CD pipelines</li>
+        </ul>
+
+        <h3>10.4 Password Management</h3>
+        <ul>
+          <li>Minimum 12 characters with special characters</li>
+          <li>Multi-Factor Authentication (MFA) mandatory</li>
+          <li>90-day password expiration</li>
+          <li>Password history enforcement (10 previous passwords)</li>
+          <li>Credentials stored in AWS Secrets Manager</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section11">
+        <h2>11. Testing & Development</h2>
+        <ul>
+          <li>PII is masked/anonymized in test environments</li>
+          <li>Production data never used in development</li>
+          <li>Synthetic test data generation for testing</li>
+          <li>Separate AWS accounts for dev/staging/production</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section12">
+        <h2>12. Monitoring & Logging</h2>
+        <ul>
+          <li>Centralized logging (AWS CloudWatch, CloudTrail)</li>
+          <li>Real-time alerting for suspicious activities</li>
+          <li>Bi-weekly log reviews by security team</li>
+          <li>12-month log retention minimum</li>
+          <li>SIEM (Security Information and Event Management) integration</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section13">
+        <h2>13. Backup & Disaster Recovery</h2>
+        <ul>
+          <li>Automated daily backups with encryption</li>
+          <li>Geographically separated backup storage (multi-region)</li>
+          <li>Recovery Time Objective (RTO): 4 hours</li>
+          <li>Recovery Point Objective (RPO): 1 hour</li>
+          <li>Monthly disaster recovery drills</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section14">
+        <h2>14. Vulnerability Management</h2>
+        <ul>
+          <li>Automated vulnerability scanning (AWS Inspector, Qualys)</li>
+          <li>Tracking via ticketing system (Jira) with SLA enforcement</li>
+          <li>Monthly security dashboard review</li>
+          <li>Third-party dependency scanning</li>
+          <li>Bug bounty program for responsible disclosure</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section15">
+        <h2>15. User Rights</h2>
+        <p>Authorized sellers can:</p>
+        <ul>
+          <li>Request access to their data</li>
+          <li>Request data deletion</li>
+          <li>Revoke API access at any time</li>
+          <li>Receive breach notifications</li>
+        </ul>
+      </div>
+
+      <div class="section" id="section16">
+        <h2>16. Policy Updates</h2>
+        <p>This policy is reviewed every 6 months and updated as needed. Users will be notified of material changes.</p>
+        <p><strong>Last Review Date:</strong> January 9, 2026<br>
+        <strong>Next Review Date:</strong> July 9, 2026</p>
+      </div>
+
+      <div class="section" id="section17">
+        <h2>17. Contact Information</h2>
+        <div class="contact-box">
+          <h3>Data Protection Officer</h3>
+          <p><strong>Organization:</strong> InArt Studio<br>
+          <strong>Email:</strong> <a href="mailto:glacerceramic@gmail.com">glacerceramic@gmail.com</a><br>
+          <strong>Website:</strong> <a href="https://inart.co.in" target="_blank">https://inart.co.in</a></p>
+
+          <p style="margin-top: 20px;">
+          <strong>For security incidents:</strong> <a href="mailto:security@amazon.com">security@amazon.com</a><br>
+          <strong>For privacy inquiries:</strong> <a href="mailto:glacerceramic@gmail.com">glacerceramic@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <p style="text-align: center; color: #999; font-size: 0.9em;">
+        &copy; 2026 InArt Studio. All rights reserved.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
