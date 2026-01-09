@@ -1,61 +1,290 @@
-# Acceptable Use Policy (AUP) Compliance Statement
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceptable Use Policy - InArt Studio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-**Organization:** InArt Studio  
-**Date:** January 10, 2026
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
 
-## Commitment to Amazon AUP
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
 
-InArt Studio commits to full compliance with Amazon's Acceptable Use Policy for Selling Partner API usage.
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px 30px;
+    }
 
-## Prohibited Activities - We Will NOT:
+    .header h1 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
 
-1. **Access Unauthorized Data**
-   - Access data from seller accounts we don't manage
-   - Attempt to circumvent API access controls
-   - Use stolen or unauthorized credentials
+    .meta {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      opacity: 0.95;
+    }
 
-2. **Data Misuse**
-   - Sell, rent, or share Amazon data with third parties
-   - Use buyer PII for unauthorized marketing
-   - Scrape or cache data beyond permitted retention periods
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+    }
 
-3. **System Abuse**
-   - Exceed API rate limits or quotas
-   - Perform load testing without authorization
-   - Attempt to reverse-engineer Amazon systems
+    .meta-label {
+      font-size: 0.85em;
+      opacity: 0.8;
+      margin-bottom: 3px;
+    }
 
-4. **Fraudulent Activities**
-   - Manipulate product reviews or ratings
-   - Create fake accounts or impersonate others
-   - Submit false information in developer registration
+    .meta-value {
+      font-weight: 600;
+      font-size: 1.05em;
+    }
 
-5. **Security Violations**
-   - Store credentials insecurely
-   - Share API access credentials
-   - Fail to report security incidents within 24 hours
+    .content {
+      padding: 40px 30px;
+    }
 
-## Our Commitments:
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
 
-✅ Use Amazon data only for authorized business purposes  
-✅ Implement robust security controls  
-✅ Maintain accurate developer profile information  
-✅ Report security incidents promptly to security@amazon.com  
-✅ Delete data when no longer needed  
-✅ Comply with all applicable laws and regulations  
-✅ Cooperate with Amazon audits and investigations  
+    .back-link:hover {
+      color: #764ba2;
+    }
 
-## Enforcement
+    .back-link::before {
+      content: "← ";
+    }
 
-Violations of AUP may result in:
-- API access suspension or termination
-- Legal action by Amazon
-- Termination of seller account
+    .intro {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 6px;
+      border-left: 4px solid #667eea;
+      margin-bottom: 30px;
+    }
 
-**Authorized Signatory:**  
-[Your Name]  
-[Your Title]  
-InArt Studio
+    h2 {
+      color: #667eea;
+      font-size: 1.6em;
+      margin: 30px 0 15px 0;
+      padding-top: 20px;
+      border-top: 2px solid #e0e0e0;
+    }
 
----
+    h2:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
 
-**Acceptance Date:** January 10, 2026
+    h3 {
+      color: #555;
+      font-size: 1.2em;
+      margin: 20px 0 10px 0;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    ol, ul {
+      margin: 15px 0 15px 25px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .commitment-list {
+      background: #f0fdf4;
+      padding: 20px;
+      border-radius: 6px;
+      border-left: 4px solid #10b981;
+      margin: 20px 0;
+    }
+
+    .commitment-list li::marker {
+      content: "✅ ";
+    }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+
+    .warning-box h3 {
+      color: #856404;
+      margin-top: 0;
+    }
+
+    .signature {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 6px;
+      margin-top: 30px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .signature p {
+      margin-bottom: 8px;
+    }
+
+    .signature strong {
+      color: #333;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 30px 0;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        padding: 30px 20px;
+      }
+
+      .header h1 {
+        font-size: 1.6em;
+      }
+
+      .content {
+        padding: 30px 20px;
+      }
+
+      .meta {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Acceptable Use Policy (AUP) Compliance Statement</h1>
+      <div class="meta">
+        <div class="meta-item">
+          <span class="meta-label">Organization</span>
+          <span class="meta-value">InArt Studio</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Acceptance Date</span>
+          <span class="meta-value">January 10, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <a href="/" class="back-link">Back to Home</a>
+
+      <div class="intro">
+        <strong>InArt Studio commits to full compliance with Amazon's Acceptable Use Policy for Selling Partner API usage.</strong>
+      </div>
+
+      <h2>Prohibited Activities - We Will NOT:</h2>
+
+      <h3>1. Access Unauthorized Data</h3>
+      <ul>
+        <li>Access data from seller accounts we don't manage</li>
+        <li>Attempt to circumvent API access controls</li>
+        <li>Use stolen or unauthorized credentials</li>
+      </ul>
+
+      <h3>2. Data Misuse</h3>
+      <ul>
+        <li>Sell, rent, or share Amazon data with third parties</li>
+        <li>Use buyer PII for unauthorized marketing</li>
+        <li>Scrape or cache data beyond permitted retention periods</li>
+      </ul>
+
+      <h3>3. System Abuse</h3>
+      <ul>
+        <li>Exceed API rate limits or quotas</li>
+        <li>Perform load testing without authorization</li>
+        <li>Attempt to reverse-engineer Amazon systems</li>
+      </ul>
+
+      <h3>4. Fraudulent Activities</h3>
+      <ul>
+        <li>Manipulate product reviews or ratings</li>
+        <li>Create fake accounts or impersonate others</li>
+        <li>Submit false information in developer registration</li>
+      </ul>
+
+      <h3>5. Security Violations</h3>
+      <ul>
+        <li>Store credentials insecurely</li>
+        <li>Share API access credentials</li>
+        <li>Fail to report security incidents within 24 hours</li>
+      </ul>
+
+      <h2>Our Commitments:</h2>
+
+      <div class="commitment-list">
+        <ul>
+          <li>Use Amazon data only for authorized business purposes</li>
+          <li>Implement robust security controls</li>
+          <li>Maintain accurate developer profile information</li>
+          <li>Report security incidents promptly to security@amazon.com</li>
+          <li>Delete data when no longer needed</li>
+          <li>Comply with all applicable laws and regulations</li>
+          <li>Cooperate with Amazon audits and investigations</li>
+        </ul>
+      </div>
+
+      <div class="warning-box">
+        <h3>Enforcement</h3>
+        <p>Violations of AUP may result in:</p>
+        <ul>
+          <li>API access suspension or termination</li>
+          <li>Legal action by Amazon</li>
+          <li>Termination of seller account</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="signature">
+        <p><strong>Authorized Signatory:</strong></p>
+        <p>[Your Name]<br>
+        [Your Title]<br>
+        InArt Studio</p>
+        <p style="margin-top: 20px;"><strong>Acceptance Date:</strong> January 10, 2026</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
